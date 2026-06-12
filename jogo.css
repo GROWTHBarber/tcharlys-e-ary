@@ -1,0 +1,192 @@
+/* START SCREEN */
+.start-screen{
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.start-box{
+  width: 100%;
+  max-width: 700px;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 30px;
+
+  padding: 50px;
+
+  text-align: center;
+}
+
+.start-box h1{
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+}
+
+.start-box p{
+  color: #ffd5ef;
+
+  margin-bottom: 30px;
+}
+
+/* BOTÕES */
+.choose-buttons{
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+}
+
+.choose-buttons button,
+.start-btn,
+#resetBtn,
+.back-button,
+.mobile-controls button{
+
+  padding: 15px 30px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background: linear-gradient(45deg, #ff0055, #7a00ff);
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  text-decoration: none;
+
+  font-size: 1rem;
+}
+
+.choose-buttons button:hover,
+.start-btn:hover,
+#resetBtn:hover,
+.back-button:hover,
+.mobile-controls button:hover{
+
+  transform: scale(1.08);
+}
+
+/* GAME */
+.hidden{
+  display: none;
+}
+
+.game-screen{
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.game-container{
+  width: 100%;
+  max-width: 900px;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 30px;
+
+  padding: 30px;
+
+  text-align: center;
+}
+
+/* PLAYERS */
+.players{
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.player-card{
+  background: rgba(255,255,255,0.08);
+
+  padding: 25px;
+
+  border-radius: 20px;
+}
+
+/* GAME AREA */
+.game-area{
+  position: relative;
+
+  width: 100%;
+  height: 450px;
+
+  overflow: hidden;
+
+  border-radius: 25px;
+
+  background: rgba(255,255,255,0.05);
+
+  margin-top: 20px;
+}
+
+/* PLAYER */
+.player{
+  position: absolute;
+
+  font-size: 3rem;
+
+  bottom: 20px;
+
+  transition: 0.1s;
+}
+
+/* CONTROLES */
+.mobile-controls{
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-top: 25px;
+}
+
+.mobile-controls button{
+  width: 80px;
+
+  height: 80px;
+
+  font-size: 2rem;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+  .start-box h1{
+    font-size: 2rem;
+  }
+
+  .game-area{
+    height: 320px;
+  }
+
+}

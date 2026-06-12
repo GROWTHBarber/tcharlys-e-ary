@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mini Game</title>
+
+  <link rel="stylesheet" href="jogo.css">
+
+</head>
+<body>
+
+  <!-- FUNDO -->
+  <div class="background"></div>
+
+  <!-- TELA INICIAL -->
+  <section class="start-screen" id="startScreen">
+
+    <div class="start-box">
+
+      <h1>💖 Desvie das Bombas 💣</h1>
+
+      <p>
+        Escolha seu jogador e sobreviva o máximo possível.
+      </p>
+
+      <!-- PLAYERS -->
+      <div class="choose-buttons">
+
+        <button id="player1Btn">
+          Player 1
+        </button>
+
+        <button id="player2Btn">
+          Player 2
+        </button>
+
+      </div>
+
+      <!-- START -->
+      <button id="startGameBtn" class="start-btn">
+        🎮 Começar
+      </button>
+
+      <!-- VOLTAR -->
+      <a href="index.html" class="back-button">
+        ⬅ Voltar
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- GAME -->
+  <section class="game-screen hidden" id="gameScreen">
+
+    <div class="game-container">
+
+      <!-- SCORE -->
+      <div class="players">
+
+        <div class="player-card">
+
+          <h2>Player 1</h2>
+
+          <p id="score1">0 pontos</p>
+
+        </div>
+
+        <div class="player-card">
+
+          <h2>Player 2</h2>
+
+          <p id="score2">0 pontos</p>
+
+        </div>
+
+      </div>
+
+      <!-- PLAYER -->
+      <h2 id="currentPlayerText">
+        Player
+      </h2>
+
+      <!-- ÁREA -->
+      <div class="game-area" id="gameArea">
+
+      </div>
+
+      <!-- STATUS -->
+      <h2 id="winner"></h2>
+
+      <!-- TOUCH CONTROLS -->
+      <div class="mobile-controls">
+
+        <button id="leftBtn">
+          ⬅
+        </button>
+
+        <button id="rightBtn">
+          ➡
+        </button>
+
+      </div>
+
+      <!-- BOTÕES -->
+      <div class="buttons">
+
+        <button id="resetBtn">
+          Reiniciar
+        </button>
+
+        <a href="index.html" class="back-button">
+          ⬅ Voltar
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="jogo.js"></script>
+
+</body>
+</html>
