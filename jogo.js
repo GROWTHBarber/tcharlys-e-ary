@@ -74,7 +74,7 @@ gameArea.appendChild(player);
 // POSIÇÃO
 // ====================================
 
-let playerX = 150;
+let playerX = 100;
 
 // ====================================
 // ESCOLHER PLAYER
